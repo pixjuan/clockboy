@@ -1,0 +1,10 @@
+.#*
+*~
+*.o
+*.sym
+*.map
+*.ihx
+*.lst
+*.noi
+TAGS
+CMakeCache.txt
