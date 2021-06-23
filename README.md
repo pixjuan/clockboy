@@ -17,7 +17,7 @@ Build
 
 You need GDBK to compile build the GB cartdridge.
 
-export GBDK_PATH=<the path where you installed GBDK>
+export GBDK_PATH=\<the path where you installed GBDK\>
 
 make
 
