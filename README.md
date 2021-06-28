@@ -17,7 +17,7 @@ Build
 
 You need GDBK to compile build the GB cartdridge.
 
-export GBDK_PATH=\<the path where you installed GBDK\>
+export GBDK_PATH=<the path where you installed GBDK>
 
 make
 
@@ -33,8 +33,8 @@ Usage
  button A             : set time
  button B             : set alarm
 
- up/down 			  : select weither the minutes or hours are modified 
- left/right			  : modify the selected units (hours or minutes)
- select				  : activate alarm (A: regular K: konami code)
+ up/down              : select weither the minutes or hours are modified 
+ left/right           : modify the selected units (hours or minutes)
+ select               : activate alarm (A: regular K: konami code)
 ```
 
