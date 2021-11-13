@@ -6,5 +6,5 @@
 INCLUDE "src/hardware.inc"
 INCLUDE "src/main.asm"
 INCLUDE "src/player.s"
-INCLUDE "src/alarma.s"
+INCLUDE "music/alarma.s"
 

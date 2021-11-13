@@ -10,9 +10,8 @@ all: alarm.gb
 
 src/cart.o: src/cart.asm src/main.asm src/circle.asm src/gbdk.asm \
             src/help.asm src/lcdcolumn.asm src/sprites.asm \
-	        src/text.asm $(IMAGE_DEPS)
+	        src/text.asm music/alarma.s $(IMAGE_DEPS)
 	rgbasm -o src/cart.o src/cart.asm
-
 
 
 alarm.gb: src/cart.o 
