@@ -252,8 +252,9 @@ Hno_dots_tiles_offset EQU  (32 * 10) + 8
 
 
 konami_sequence::
-     db J_UP, J_UP, J_DOWN, J_DOWN, J_LEFT, J_RIGHT, J_LEFT, J_RIGHT, J_B, J_A, J_B, J_A
+     db J_UP, J_UP, J_DOWN, J_DOWN, J_LEFT, J_RIGHT, J_LEFT, J_RIGHT, J_B, J_A
 
+konami_sequence_len EQU 10
 
 blank_screen::
     ds 20*18, $00
@@ -821,7 +822,7 @@ no_konami_key_pressed:
 konami_check_completion:
     ld hl, kindex
     ld a, [hl]
-    sub $0c
+    sub konami_sequence_len
     jr z, konami_detected
 
     ld de, $0000
