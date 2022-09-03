@@ -349,7 +349,7 @@ no_blink_inc:
     
     ld hl, second_counter
     ld a, [hl]
-    add $B4                        ; set the carry bit if overflow
+    add $B7                        ; set the carry bit if overflow
     ld [hl+], a                    ; carry bit untouched
     ld a, 0                        ; carry bit untouched
     adc a, [hl]                    ;a = msb + 1 + carry bit
